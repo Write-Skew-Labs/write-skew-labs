@@ -1,10 +1,8 @@
 ---
 import App from '../App.vue'
+import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
-<!--
-  No need for <html>, <body> etc unless you want a custom layout.
-  Astro will generate a full HTML document.
--->
-
-<App client:load />
+<BaseLayout title="Write Skew Labs">
+  <App client:load />
+</BaseLayout>
