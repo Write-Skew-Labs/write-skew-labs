@@ -143,7 +143,7 @@ import Navbar from '@/components/Navbar.vue'
       content: "";
       position: absolute;
       inset: 0;
-      background: url('./hero_250_kb.webp') right center/cover no-repeat; /* image path */
+      background: url('/images/hero_250_kb.webp') right center/cover no-repeat; /* image path */
       clip-path: polygon(30% 0, 100% 0, 100% 100%, 10% 100%);
 
       @container (width <= 1024px) {

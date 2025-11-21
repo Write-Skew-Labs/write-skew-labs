@@ -5,7 +5,7 @@
 <template>
   <nav class="navbar dark">
     <div class="navbar__logo">
-      <img class="navbar__img" src="/white_logo.png" alt="company-logo">
+      <img class="navbar__img" src="/images/white_logo.png" alt="company-logo">
     </div>
     <ul class="navbar__links">
       <li tabindex="0" class="navbar__links__item">About</li>

@@ -9,7 +9,7 @@ const currentYear = ref(new Date().getFullYear());
   <footer class="footer-container dark">
     <div class="footer">
       <div class="logo">
-        <img class="logo__img" src="/white_logo.png" alt="company-logo">
+        <img class="logo__img" src="/images/white_logo.png" alt="company-logo">
       </div>
       <div class="links">
         <div class="links__column">
