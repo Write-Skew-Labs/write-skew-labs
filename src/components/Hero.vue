@@ -1,6 +1,7 @@
 <script setup lang="ts">
 
 import Navbar from '@/components/Navbar.vue'
+import ScrollLink from '@/components/ScrollLink.vue'
 </script>
 
 <template>
@@ -14,7 +15,9 @@ import Navbar from '@/components/Navbar.vue'
             Write Skew Labs — ensuring consistency across code, data, and design.
           </p>
           <div class="hero__cta-container">
-            <button class="hero__cta__contact-us">Contact Us</button>
+            <ScrollLink href="#contact-us" class="hero__cta__contact-us">
+              <button>Contact Us</button>
+            </ScrollLink>
             <button class="hero__cta__secondary">
               Our Services
             </button>

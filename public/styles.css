@@ -237,3 +237,27 @@ button {
   }
 }
 
+input, textarea {
+  max-height: 40px;
+  padding-inline: .75rem;
+  padding-block: .375rem;
+  border-radius: .375rem;
+  flex: 1 0 16rem;
+  background-color: oklab(100% 0 0 / 0.05);
+  font-size: .875rem;
+  line-height: 1.5rem;
+  border: none;
+  outline: oklch(37.3% .034 259.733) solid 1px;
+  outline-offset: calc(1px * -1);
+  caret-color: var(--gray-12);
+  color: var(--gray-12);
+
+  &:focus {
+    outline: 2px solid oklch(58.5% .233 277.117);
+  }
+
+  @container (width <= 350px) {
+    flex-basis: auto;
+  }
+}
+

@@ -6,7 +6,7 @@ import ContactUs from '@/components/ContactUs.vue'
 
 <template>
   <Hero></Hero>
-<!--  <ContactUs></ContactUs>-->
+  <ContactUs id="contact-us"></ContactUs>
   <Footer></Footer>
 </template>
 
