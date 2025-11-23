@@ -7,7 +7,7 @@ import ScrollLink from '@/components/ScrollLink.vue'
 <template>
   <nav class="navbar dark">
     <div class="navbar__logo">
-      <img class="navbar__img" src="/images/white_logo.png" alt="company-logo">
+      <img class="navbar__img" src="/images/white_logo.webp" alt="company-logo">
     </div>
     <ul class="navbar__links">
       <li tabindex="0" class="navbar__links__item">About</li>
@@ -62,7 +62,7 @@ $single-column-breakpoint: 768px;
   color: var(--gray-12);
 
   &__logo {
-    width: 3.5rem;
+    width: 3.25rem;
     height: 3.5rem;
     &:hover {
       cursor: pointer;

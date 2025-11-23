@@ -9,7 +9,7 @@ const currentYear = ref(new Date().getFullYear());
   <footer class="footer-container dark">
     <div class="footer">
       <div class="logo">
-        <img class="logo__img" src="/images/white_logo.png" alt="company-logo">
+        <img class="logo__img" src="/images/white_logo.webp" alt="company-logo">
       </div>
       <div class="links">
         <div class="links__column">
@@ -148,7 +148,7 @@ $small-device-breakpoint: 576px;
 }
 
 .logo {
-  width: 3.5rem;
+  width: 3.25rem;
   height: 3.5rem;
   margin-bottom: 3rem;
   &:hover {
