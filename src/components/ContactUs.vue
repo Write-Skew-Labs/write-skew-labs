@@ -157,7 +157,7 @@ import { Label } from 'reka-ui'
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
-    background-color: var(--blue-1);
+    background-color: var(--blue-2);
     &__row {
       display: flex;
       flex-wrap: wrap;
@@ -196,8 +196,6 @@ import { Label } from 'reka-ui'
       display: flex;
       justify-content: flex-end;
     }
-
-
   }
 
 

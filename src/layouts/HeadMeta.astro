@@ -1,0 +1,21 @@
+---
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Website",
+  "name": "Write Skew Labs",
+  "alternateName": ["Write Skew Labs"],
+  "url": "https://writeskewlabs.com/"
+}
+const { title = 'Write Skew Labs – Write once, right always' } = Astro.props
+const pageDescription = "Write Skew Labs ensures consistency across code, data, and design. Engineering, consulting, and scalable digital solutions.";
+---
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon/favicon.ico" />
+  <title>{title}</title>
+  <meta name="description" content={pageDescription} />
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+</head>

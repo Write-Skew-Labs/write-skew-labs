@@ -2,10 +2,12 @@
 import Hero from '@/components/Hero.vue'
 import Footer from '@/components/Footer.vue'
 import ContactUs from '@/components/ContactUs.vue'
+import OurServices from '@/components/OurServices.vue'
 </script>
 
 <template>
   <Hero></Hero>
+  <OurServices id="our-services"></OurServices>
   <ContactUs id="contact-us"></ContactUs>
   <Footer></Footer>
 </template>

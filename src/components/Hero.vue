@@ -18,9 +18,11 @@ import ScrollLink from '@/components/ScrollLink.vue'
             <ScrollLink href="#contact-us" class="hero__cta__contact-us">
               <button>Contact Us</button>
             </ScrollLink>
-            <button class="hero__cta__secondary">
-              Our Services
-            </button>
+            <ScrollLink href="#our-services" class="hero__cta__contact-us">
+              <button class="hero__cta__secondary">
+                Our Services
+              </button>
+            </ScrollLink>
           </div>
         </div>
       </div>

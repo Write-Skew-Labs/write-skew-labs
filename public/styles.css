@@ -1,263 +1,263 @@
 
-/* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-/* 2. Remove default margin */
-* {
-  margin: 0;
-}
-
-/* 3. Enable keyword animations */
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    interpolate-size: allow-keywords;
+  /* 1. Use a more-intuitive box-sizing model */
+  *, *::before, *::after {
+    box-sizing: border-box;
   }
-}
 
-body {
-  /* 4. Add accessible line-height */
-  line-height: 1.5;
-  /* 5. Improve text rendering */
-  -webkit-font-smoothing: antialiased;
-}
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
 
-/* 6. Improve media defaults */
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-
-/* 7. Inherit fonts for form controls */
-input, button, textarea, select {
-  font: inherit;
-}
-
-/* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-
-/* 9. Improve line wrapping */
-p {
-  text-wrap: pretty;
-}
-h1, h2, h3, h4, h5, h6 {
-  text-wrap: balance;
-}
-
-/*
-  10. ul, li padding reset
-*/
-ul, li {
-  padding: 0;
-}
-
-/*
-  11. Create a root stacking context
-*/
-#root, #__next {
-  isolation: isolate;
-}
-
-/*
-  12. Font
- */
-body {
-  font-family: 'OpenSauce', sans-serif;
-  font-size: 0.9rem;
-}
-
-.dark, .dark-theme {
-  --blue-cta: oklch(58.5% .233 277.117);
-  --blue-cta-secondary: oklch(67.3% .182 276.935);;
-  --blue-1: #0a1020;
-  --blue-2: #0f172a;
-  --blue-3: #192544;
-  --blue-4: #243151;
-  --blue-5: #2f3d5d;
-  --blue-6: #3a496a;
-  --blue-7: #485779;
-  --blue-8: #57678b;
-  --blue-9: #69799e;
-  --blue-10: #5d6d90;
-  --blue-11: #a3b5dd;
-  --blue-12: #cfe1ff;
-
-  --blue-a1: #0002f211;
-  --blue-a2: #004afe1b;
-  --blue-a3: #376efe37;
-  --blue-a4: #5888fe45;
-  --blue-a5: #6e99fd52;
-  --blue-a6: #7ea6fd60;
-  --blue-a7: #8eb0fd70;
-  --blue-a8: #9ab9ff83;
-  --blue-a9: #a5c0fe98;
-  --blue-a10: #9fbcfe89;
-  --blue-a11: #bbd0ffdb;
-  --blue-a12: #cfe1ff;
-
-  --blue-contrast: #fff;
-  --blue-surface: #0e1d4380;
-  --blue-indicator: #69799e;
-  --blue-track: #69799e;
-}
-
-@supports (color: color(display-p3 1 1 1)) {
-  @media (color-gamut: p3) {
-    .dark, .dark-theme {
-      --blue-1: oklch(17.8% 0.0332 265.8);
-      --blue-2: oklch(20.8% 0.0398 265.8);
-      --blue-3: oklch(27.2% 0.0597 265.8);
-      --blue-4: oklch(31.8% 0.0597 265.8);
-      --blue-5: oklch(36.2% 0.0597 265.8);
-      --blue-6: oklch(40.8% 0.0597 265.8);
-      --blue-7: oklch(45.8% 0.0597 265.8);
-      --blue-8: oklch(51.5% 0.0597 265.8);
-      --blue-9: oklch(57.8% 0.0597 265.8);
-      --blue-10: oklch(53.4% 0.0597 265.8);
-      --blue-11: oklch(77.4% 0.0597 265.8);
-      --blue-12: oklch(91% 0.059 265.8);
-
-      --blue-a1: color(display-p3 0 0.0039 1 / 0.059);
-      --blue-a2: color(display-p3 0.0667 0.302 1 / 0.101);
-      --blue-a3: color(display-p3 0.2588 0.451 1 / 0.206);
-      --blue-a4: color(display-p3 0.3961 0.5451 0.9961 / 0.261);
-      --blue-a5: color(display-p3 0.4824 0.6235 1 / 0.311);
-      --blue-a6: color(display-p3 0.5451 0.6745 1 / 0.362);
-      --blue-a7: color(display-p3 0.6039 0.7137 1 / 0.425);
-      --blue-a8: color(display-p3 0.6353 0.7373 0.9961 / 0.5);
-      --blue-a9: color(display-p3 0.6824 0.7725 1 / 0.58);
-      --blue-a10: color(display-p3 0.6627 0.7608 1 / 0.522);
-      --blue-a11: color(display-p3 0.7569 0.8235 1 / 0.845);
-      --blue-a12: color(display-p3 0.8353 0.8902 1 / 0.988);
-
-      --blue-contrast: #fff;
-      --blue-surface: color(display-p3 0.0627 0.1098 0.251 / 0.5);
-      --blue-indicator: oklch(57.8% 0.0597 265.8);
-      --blue-track: oklch(57.8% 0.0597 265.8);
+  /* 3. Enable keyword animations */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      interpolate-size: allow-keywords;
     }
   }
-}
 
-.dark, .dark-theme {
-  --gray-1: #111113;
-  --gray-2: #19191b;
-  --gray-3: #222325;
-  --gray-4: #292a2e;
-  --gray-5: #303136;
-  --gray-6: #393a40;
-  --gray-7: #46484f;
-  --gray-8: #5f606a;
-  --gray-9: #6c6e79;
-  --gray-10: #797b86;
-  --gray-11: #b2b3bd;
-  --gray-12: #eeeef0;
+  body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
 
-  --gray-a1: #1111bb03;
-  --gray-a2: #cbcbf90b;
-  --gray-a3: #d6e2f916;
-  --gray-a4: #d1d9f920;
-  --gray-a5: #d7ddfd28;
-  --gray-a6: #d9defc33;
-  --gray-a7: #dae2fd43;
-  --gray-a8: #e0e3fd60;
-  --gray-a9: #e0e4fd70;
-  --gray-a10: #e3e7fd7e;
-  --gray-a11: #eff0feb9;
-  --gray-a12: #fdfdffef;
+  /* 6. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
 
-  --gray-contrast: #FFFFFF;
-  --gray-surface: rgba(0, 0, 0, 0.05);
-  --gray-indicator: #6c6e79;
-  --gray-track: #6c6e79;
-}
+  /* 7. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
 
-@supports (color: color(display-p3 1 1 1)) {
-  @media (color-gamut: p3) {
-    .dark, .dark-theme {
-      --gray-1: oklch(17.8% 0.0042 277.7);
-      --gray-2: oklch(21.5% 0.004 277.7);
-      --gray-3: oklch(25.5% 0.0055 277.7);
-      --gray-4: oklch(28.4% 0.0075 277.7);
-      --gray-5: oklch(31.4% 0.0089 277.7);
-      --gray-6: oklch(35% 0.01 277.7);
-      --gray-7: oklch(40.2% 0.0121 277.7);
-      --gray-8: oklch(49.2% 0.0157 277.7);
-      --gray-9: oklch(54% 0.0167 277.7);
-      --gray-10: oklch(58.6% 0.0165 277.7);
-      --gray-11: oklch(77% 0.0138 277.7);
-      --gray-12: oklch(94.9% 0.0026 277.7);
+  /* 8. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
 
-      --gray-a1: color(display-p3 0.0667 0.0667 0.9412 / 0.009);
-      --gray-a2: color(display-p3 0.8 0.8 0.9804 / 0.043);
-      --gray-a3: color(display-p3 0.851 0.898 0.9882 / 0.085);
-      --gray-a4: color(display-p3 0.8392 0.8706 1 / 0.122);
-      --gray-a5: color(display-p3 0.8471 0.8745 1 / 0.156);
-      --gray-a6: color(display-p3 0.8784 0.898 1 / 0.194);
-      --gray-a7: color(display-p3 0.8745 0.9059 0.9961 / 0.257);
-      --gray-a8: color(display-p3 0.8941 0.9059 1 / 0.37);
-      --gray-a9: color(display-p3 0.8902 0.9098 1 / 0.433);
-      --gray-a10: color(display-p3 0.902 0.9176 1 / 0.488);
-      --gray-a11: color(display-p3 0.9451 0.949 1 / 0.719);
-      --gray-a12: color(display-p3 0.9922 0.9922 1 / 0.937);
+  /* 9. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
 
-      --gray-contrast: #FFFFFF;
-      --gray-surface: color(display-p3 0 0 0 / 5%);
-      --gray-indicator: oklch(54% 0.0167 277.7);
-      --gray-track: oklch(54% 0.0167 277.7);
+  /*
+    10. ul, li padding reset
+  */
+  ul, li {
+    padding: 0;
+  }
+
+  /*
+    11. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /*
+    12. Font
+   */
+  body {
+    font-family: 'OpenSauce', sans-serif;
+    font-size: 0.9rem;
+  }
+
+  .dark, .dark-theme {
+    --blue-cta: oklch(58.5% .233 277.117);
+    --blue-cta-secondary: oklch(67.3% .182 276.935);;
+    --blue-1: #0a1020;
+    --blue-2: #0f172a;
+    --blue-3: #192544;
+    --blue-4: #243151;
+    --blue-5: #2f3d5d;
+    --blue-6: #3a496a;
+    --blue-7: #485779;
+    --blue-8: #57678b;
+    --blue-9: #69799e;
+    --blue-10: #5d6d90;
+    --blue-11: #a3b5dd;
+    --blue-12: #cfe1ff;
+
+    --blue-a1: #0002f211;
+    --blue-a2: #004afe1b;
+    --blue-a3: #376efe37;
+    --blue-a4: #5888fe45;
+    --blue-a5: #6e99fd52;
+    --blue-a6: #7ea6fd60;
+    --blue-a7: #8eb0fd70;
+    --blue-a8: #9ab9ff83;
+    --blue-a9: #a5c0fe98;
+    --blue-a10: #9fbcfe89;
+    --blue-a11: #bbd0ffdb;
+    --blue-a12: #cfe1ff;
+
+    --blue-contrast: #fff;
+    --blue-surface: #0e1d4380;
+    --blue-indicator: #69799e;
+    --blue-track: #69799e;
+  }
+
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      .dark, .dark-theme {
+        --blue-1: oklch(17.8% 0.0332 265.8);
+        --blue-2: oklch(20.8% 0.0398 265.8);
+        --blue-3: oklch(27.2% 0.0597 265.8);
+        --blue-4: oklch(31.8% 0.0597 265.8);
+        --blue-5: oklch(36.2% 0.0597 265.8);
+        --blue-6: oklch(40.8% 0.0597 265.8);
+        --blue-7: oklch(45.8% 0.0597 265.8);
+        --blue-8: oklch(51.5% 0.0597 265.8);
+        --blue-9: oklch(57.8% 0.0597 265.8);
+        --blue-10: oklch(53.4% 0.0597 265.8);
+        --blue-11: oklch(77.4% 0.0597 265.8);
+        --blue-12: oklch(91% 0.059 265.8);
+
+        --blue-a1: color(display-p3 0 0.0039 1 / 0.059);
+        --blue-a2: color(display-p3 0.0667 0.302 1 / 0.101);
+        --blue-a3: color(display-p3 0.2588 0.451 1 / 0.206);
+        --blue-a4: color(display-p3 0.3961 0.5451 0.9961 / 0.261);
+        --blue-a5: color(display-p3 0.4824 0.6235 1 / 0.311);
+        --blue-a6: color(display-p3 0.5451 0.6745 1 / 0.362);
+        --blue-a7: color(display-p3 0.6039 0.7137 1 / 0.425);
+        --blue-a8: color(display-p3 0.6353 0.7373 0.9961 / 0.5);
+        --blue-a9: color(display-p3 0.6824 0.7725 1 / 0.58);
+        --blue-a10: color(display-p3 0.6627 0.7608 1 / 0.522);
+        --blue-a11: color(display-p3 0.7569 0.8235 1 / 0.845);
+        --blue-a12: color(display-p3 0.8353 0.8902 1 / 0.988);
+
+        --blue-contrast: #fff;
+        --blue-surface: color(display-p3 0.0627 0.1098 0.251 / 0.5);
+        --blue-indicator: oklch(57.8% 0.0597 265.8);
+        --blue-track: oklch(57.8% 0.0597 265.8);
+      }
     }
   }
-}
 
-.dark, .dark-theme, :is(.dark, .dark-theme) :where(.radix-themes:not(.light, .light-theme)) {
-  --color-background: #111;
-}
+  .dark, .dark-theme {
+    --gray-1: #111113;
+    --gray-2: #19191b;
+    --gray-3: #222325;
+    --gray-4: #292a2e;
+    --gray-5: #303136;
+    --gray-6: #393a40;
+    --gray-7: #46484f;
+    --gray-8: #5f606a;
+    --gray-9: #6c6e79;
+    --gray-10: #797b86;
+    --gray-11: #b2b3bd;
+    --gray-12: #eeeef0;
 
+    --gray-a1: #1111bb03;
+    --gray-a2: #cbcbf90b;
+    --gray-a3: #d6e2f916;
+    --gray-a4: #d1d9f920;
+    --gray-a5: #d7ddfd28;
+    --gray-a6: #d9defc33;
+    --gray-a7: #dae2fd43;
+    --gray-a8: #e0e3fd60;
+    --gray-a9: #e0e4fd70;
+    --gray-a10: #e3e7fd7e;
+    --gray-a11: #eff0feb9;
+    --gray-a12: #fdfdffef;
 
-button {
-  display: flex;
-  align-items: center;
-  color: var(--blue-12);
-  border: var(--iris-6);
-  outline: 1px solid var(--iris-6);
-  background-color: var(--blue-cta);
-  border-radius: 6px;
-  padding: 0.75em 1.75em;
-  font-weight: bold;
-  &:hover {
-    cursor: pointer;
-    color: white;
-    background-color: var(--blue-cta-secondary);
-  }
-  &:focus-visible {
-    outline: 3px solid var(--blue-cta-secondary);
-    outline-offset: 3px;
-  }
-}
-
-input, textarea {
-  max-height: 40px;
-  padding-inline: .75rem;
-  padding-block: .375rem;
-  border-radius: .375rem;
-  flex: 1 0 16rem;
-  background-color: oklab(100% 0 0 / 0.05);
-  font-size: .875rem;
-  line-height: 1.5rem;
-  border: none;
-  outline: oklch(37.3% .034 259.733) solid 1px;
-  outline-offset: calc(1px * -1);
-  caret-color: var(--gray-12);
-  color: var(--gray-12);
-
-  &:focus {
-    outline: 2px solid oklch(58.5% .233 277.117);
+    --gray-contrast: #FFFFFF;
+    --gray-surface: rgba(0, 0, 0, 0.05);
+    --gray-indicator: #6c6e79;
+    --gray-track: #6c6e79;
   }
 
-  @container (width <= 350px) {
-    flex-basis: auto;
+  @supports (color: color(display-p3 1 1 1)) {
+    @media (color-gamut: p3) {
+      .dark, .dark-theme {
+        --gray-1: oklch(17.8% 0.0042 277.7);
+        --gray-2: oklch(21.5% 0.004 277.7);
+        --gray-3: oklch(25.5% 0.0055 277.7);
+        --gray-4: oklch(28.4% 0.0075 277.7);
+        --gray-5: oklch(31.4% 0.0089 277.7);
+        --gray-6: oklch(35% 0.01 277.7);
+        --gray-7: oklch(40.2% 0.0121 277.7);
+        --gray-8: oklch(49.2% 0.0157 277.7);
+        --gray-9: oklch(54% 0.0167 277.7);
+        --gray-10: oklch(58.6% 0.0165 277.7);
+        --gray-11: oklch(77% 0.0138 277.7);
+        --gray-12: oklch(94.9% 0.0026 277.7);
+
+        --gray-a1: color(display-p3 0.0667 0.0667 0.9412 / 0.009);
+        --gray-a2: color(display-p3 0.8 0.8 0.9804 / 0.043);
+        --gray-a3: color(display-p3 0.851 0.898 0.9882 / 0.085);
+        --gray-a4: color(display-p3 0.8392 0.8706 1 / 0.122);
+        --gray-a5: color(display-p3 0.8471 0.8745 1 / 0.156);
+        --gray-a6: color(display-p3 0.8784 0.898 1 / 0.194);
+        --gray-a7: color(display-p3 0.8745 0.9059 0.9961 / 0.257);
+        --gray-a8: color(display-p3 0.8941 0.9059 1 / 0.37);
+        --gray-a9: color(display-p3 0.8902 0.9098 1 / 0.433);
+        --gray-a10: color(display-p3 0.902 0.9176 1 / 0.488);
+        --gray-a11: color(display-p3 0.9451 0.949 1 / 0.719);
+        --gray-a12: color(display-p3 0.9922 0.9922 1 / 0.937);
+
+        --gray-contrast: #FFFFFF;
+        --gray-surface: color(display-p3 0 0 0 / 5%);
+        --gray-indicator: oklch(54% 0.0167 277.7);
+        --gray-track: oklch(54% 0.0167 277.7);
+      }
+    }
   }
-}
+
+  .dark, .dark-theme, :is(.dark, .dark-theme) :where(.radix-themes:not(.light, .light-theme)) {
+    --color-background: #111;
+  }
+
+
+  button {
+    display: flex;
+    align-items: center;
+    color: var(--blue-12);
+    border: var(--iris-6);
+    outline: 1px solid var(--iris-6);
+    background-color: var(--blue-cta);
+    border-radius: 6px;
+    padding: 0.75em 1.75em;
+    font-weight: bold;
+    &:hover {
+      cursor: pointer;
+      color: white;
+      background-color: var(--blue-cta-secondary);
+    }
+    &:focus-visible {
+      outline: 3px solid var(--blue-cta-secondary);
+      outline-offset: 3px;
+    }
+  }
+
+  input, textarea {
+    max-height: 40px;
+    padding-inline: .75rem;
+    padding-block: .375rem;
+    border-radius: .375rem;
+    flex: 1 0 16rem;
+    background-color: oklab(100% 0 0 / 0.05);
+    font-size: .875rem;
+    line-height: 1.5rem;
+    border: none;
+    outline: oklch(37.3% .034 259.733) solid 1px;
+    outline-offset: calc(1px * -1);
+    caret-color: var(--gray-12);
+    color: var(--gray-12);
+
+    &:focus {
+      outline: 2px solid oklch(58.5% .233 277.117);
+    }
+
+    @container (width <= 350px) {
+      flex-basis: auto;
+    }
+  }
 

@@ -11,7 +11,9 @@ import ScrollLink from '@/components/ScrollLink.vue'
     </div>
     <ul class="navbar__links">
       <li tabindex="0" class="navbar__links__item">About</li>
-      <li tabindex="0" class="navbar__links__item">Services</li>
+      <ScrollLink href="#our-services" class="hero__cta__contact-us">
+        <li tabindex="0" class="navbar__links__item">Services</li>
+      </ScrollLink>
       <li tabindex="0" class="navbar__links__item">Portfolio</li>
       <li tabindex="0" class="navbar__links__item">Blog</li>
       <li tabindex="0" class="navbar__links__item">Career</li>
