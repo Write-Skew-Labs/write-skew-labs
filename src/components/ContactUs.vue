@@ -18,7 +18,7 @@ import { Label } from 'reka-ui'
         </div>
         <div class="contact-medium">
           <Icon icon="ic:round-phone" class="symbol"/>
-          <p>+91-7290822269</p>
+          <p>+91-9136066636</p>
         </div>
         <div class="contact-medium">
           <Icon icon="material-symbols:mail-outline-rounded" class="symbol"/>
